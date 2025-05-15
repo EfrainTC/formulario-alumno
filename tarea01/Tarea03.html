@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favil.ico" type="image/x-icon">
+    <title>Formulario De Alumno. tarea01</title>
+    <style>
+        body {
+            background-image: url('img/Dragon-Ball-Super.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .contenido {
+            padding: 20px;
+            width: 95%;
+            max-width: 1000px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            vertical-align: top;
+            font-weight: bold;
+        }
+
+        .etiqueta {
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        img {
+            display: block;
+            margin: auto;
+            max-width: 210px;
+        }
+
+        label {
+            margin-right: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="contenido">
+        <form action="">
+            <table>
+                <tr>
+                    <td class="title">FOTO </td>
+                    <td colspan="3" class="title">NOMBRE COMPLETO</td>
+                </tr>
+                <tr>
+                    <td rowspan="6" class="img-celda">
+                        <img src="img/po.jpg" alt="Foto">
+                    </td>
+                    <td class="title">PATERNO</td>
+                    <td class="title">MATERNO</td>
+                    <td class="title">NOMBRES</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="paterno"></td>
+                    <td><input type="text" name="materno"></td>
+                    <td><input type="text" name="nombres"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="title">FECHA DE NACIMIENTO:</td>
+                    <td><input type="datetime-local" name="fecha_nacimiento"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="title">DISTRITO:</td>
+                    <td>
+                        <select name="distrito">
+                            <option value="Puente Piedra">Puente Piedra</option>
+                            <option value="Zapallal">Zapallal</option>
+                            <option value="Fundicion"> Fundicion</option>
+                            <option value="Flecha">Flecha</option>
+
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="title">INSTRUCCIÓN:</td>
+                    <td>
+                        <select name="instruccion">
+                            <option value="Primary">Primaria</option>
+                            <option value="Secondaria">Secondaria</option>
+                            <option value="Universitaria">Universitaria</option>
+                            <option value="Tecnico">Tecnico</option>
+                            <option value="Ninguno">Ninguno</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="title">GÉNERO:</td>
+                    <td>
+                        <label><input type="radio" name="genero" value="Masculino"> Masculino</label>
+                        <label><input type="radio" name="genero" value="Femenino"> Femenino</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title">BASE DE DATOS:</td>
+                    <td><label><input type="checkbox" name="base_datos" value="Oracle"> Oracle</label></td>
+                    <td><label><input type="checkbox" name="base_datos" value="SQL_Server"> SQL Server</label></td>
+                    <td><label><input type="checkbox" name="base_datos" value="MySQL"> MySQL</label></td>
+                </tr>
+                <tr>
+                    <td class="title">LENGUAJES DE PROGRAMACIÓN:</td>
+                    <td><label><input type="checkbox" name="lenguajes_prog" value="Java"> Java</label></td>
+                    <td><label><input type="checkbox" name="lenguajes_prog" value="Python"> Python</label></td>
+                    <td><label><input type="checkbox" name="lenguajes_prog" value="C++"> C++</label></td>
+                </tr>
+                <tr>
+                    <td class="title">EDITORES DE CÓDIGO:</td>
+                    <td><label><input type="checkbox" name="editores_codigo" value="Visual Studio Code"> Visual Studio
+                            Code</label></td>
+                    <td><label><input type="checkbox" name="editores_codigo" value="Subline Text"> Subline Text</label>
+                    </td>
+                    <td><label><input type="checkbox" name="editores_codigo" value="Atom"> Atom</label></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
